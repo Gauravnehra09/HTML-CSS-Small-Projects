@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.container{
+    height: 60vh;
+    width: 20vw;
+    border: 2px solid black;
+    border-radius: 12px;
+    margin: auto;
+    margin-top: 10vh;
+}
+.box1{
+
+height: 30vh;
+padding: 10px;
+}
+img{
+   
+    border-radius: 12px;
+
+}
+
+span{
+    border-radius: 18px ;
+    border: 2px solid black;
+    margin: 0px 15px ;
+    padding: 5px 25px;
+    font-size:larger
+}
+.box3{
+    overflow: auto;
+    
+    padding: 25px ;
+}

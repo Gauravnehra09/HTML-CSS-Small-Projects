@@ -1,0 +1,104 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    perspective: 1000px;
+}
+
+.animation {
+    background-color:black;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cube {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    transform-style: preserve-3d;
+    animation: cubeRotate 8s infinite linear;
+}
+
+.cube-face {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    /* background-color: rgba(236, 235, 241, 0.874);
+    border: 2px solid black; */
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.9;
+    box-shadow: 0 0 10px rgba(222, 10, 10, 0.5);
+
+    background: rgba(255, 255, 255, 0.2); /* light transparent white */
+    border: 2px solid rgba(255, 255, 255, 0.5); /* semi-transparent border */
+    backdrop-filter: blur(2px); /* gives glassy effect */
+    color: white;
+ 
+}
+
+/* Position each face in 3D */
+.front  { 
+    transform: translateZ(70px); 
+}
+
+.back   {
+     transform: rotateY(180deg) translateZ(70px); 
+    }
+
+.right  {
+     transform: rotateY(90deg) translateZ(70px); 
+    }
+
+.left   {
+     transform: rotateY(-90deg) translateZ(70px); 
+    }
+
+.top    {
+     transform: rotateX(90deg) translateZ(70px); 
+    }
+
+.bottom {
+     transform: rotateX(-90deg) translateZ(70px);
+     }
+
+@keyframes cubeRotate {
+    0%   {
+         transform: rotateX(0deg) rotateY(0deg);
+         }
+    100% {
+         transform: rotateX(360deg) rotateY(360deg);
+         }
+}
+
+/* .front  {
+     background-color: rgba(255, 0, 0, 0.5);
+     }
+
+.back   {
+     background-color: rgba(0, 255, 0, 0.5);
+     }
+
+.right  {
+     background-color: rgba(0, 0, 255, 0.5);
+     }
+
+.left   {
+     background-color: rgba(255, 255, 0, 0.5); 
+    }
+
+.top    {
+     background-color: rgba(0, 255, 255, 0.5); 
+    }
+
+.bottom {
+     background-color: rgba(255, 0, 255, 0.5);
+     } */
